@@ -1,5 +1,10 @@
 import Header from "@/src/components/common/header";
-import Profile from "@/src/components/home/profile";
+import LatestArticles from "@/src/components/latestArticles/latestArticles";
+import Footer from "@/src/components/common/footer";
+import Articles from "@/src/components/articles/articles";
+import TopStories from "@/src/components/top-stories/topStores";
+import RelatedArticles from "@/src/components/related-articles/relatedArticles";
+import Slide from "@/src/components/slide/slide";
 
 export default function Home() {
   return (
@@ -7,7 +12,14 @@ export default function Home() {
       <main className="bg-[#e44d3b] flex flex-col items-center justify-between">
         <Header />
       </main>
-      <Profile />
+      <Slide />
+      <LatestArticles />
+      <Articles />
+      <TopStories />
+      <RelatedArticles />
+      <div className="bg-[#e44d3b] ">
+        <Footer />
+      </div>
     </div>
   );
 }
