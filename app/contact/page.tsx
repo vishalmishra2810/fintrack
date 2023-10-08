@@ -1,4 +1,4 @@
-import Header from "@/src/components/common/header";
+import Header from "@/src/common/header";
 import Contact from "@/src/components/contact/contact";
 import React from "react";
 
