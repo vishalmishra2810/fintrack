@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className=" sticky top-0 z-5">
+    <div className="headerWidth">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo with the Image component */}
         <div className="flex items-center">
@@ -28,12 +28,12 @@ const Header = () => {
           <a href="/" className="text-white hover:underline">
             Home
           </a>
-          <a href="/" className="text-white hover:underline">
-            Home
+          <a href="/login" className="text-white hover:underline">
+            login
           </a>
         </nav>
       </div>
-    </header>
+    </div>
   );
 };
 
