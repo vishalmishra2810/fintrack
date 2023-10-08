@@ -1,4 +1,6 @@
+import Tags from "@/src/components/tags/tags";
 import NewsLetter from "../news-letter/newsLetter";
+import Comment from "@/src/components/comment/comment";
 
 const Blog = () => {
   return (
@@ -49,6 +51,9 @@ const Blog = () => {
                 Another Link
               </a>
             </div>
+          </div>
+          <div className="pt-6">
+            <Tags />
           </div>
         </p>
         <div className="h-[250px] min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-20 dark:opacity-100"></div>
@@ -142,6 +147,7 @@ const Blog = () => {
           </div>
         </p>
       </div>
+      <Comment />
       <NewsLetter />
     </div>
   );
