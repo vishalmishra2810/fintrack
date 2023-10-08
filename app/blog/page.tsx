@@ -1,4 +1,5 @@
 import Blog from "@/src/common/blog/blog";
+import Footer from "@/src/common/footer";
 import Header from "@/src/common/header";
 
 const BlogPage = () => {
@@ -6,6 +7,7 @@ const BlogPage = () => {
     <>
       <Header />
       <Blog />
+      <Footer />
     </>
   );
 };
