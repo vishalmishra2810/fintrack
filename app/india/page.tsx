@@ -1,17 +1,17 @@
 import Footer from "@/src/common/footer";
 import Header from "@/src/common/header";
 import SpeedDial from "@/src/common/speed-dial/speed-dial";
-import Politics from "@/src/components/politics/politics";
+import India from "@/src/components/India/india";
 
-const PoliticsPage = () => {
+const IndiaPage = () => {
   return (
     <div>
       <Header />
-      <Politics />
+      <India />
       <SpeedDial />
       <Footer />
     </div>
   );
 };
 
-export default PoliticsPage;
+export default IndiaPage;

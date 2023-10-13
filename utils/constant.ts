@@ -6,6 +6,7 @@ export enum URLPaths {
   Politics = "/politics",
   Trending = "/trending",
   Sports = "/sports",
+  Contact = "/contact",
   LifeStyle = "/lifestyle",
   Facebook = "www.facebook.com/media",
   Instagram = "www.Instagram.com/media",

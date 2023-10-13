@@ -1,15 +1,15 @@
 import Footer from "@/src/common/footer";
 import Header from "@/src/common/header";
-import Trending from "@/src/components/trending/trending";
+import LifeStyle from "@/src/components/lifestyle/lifestyle";
 
-const TrendingPage = () => {
+const LifeStylePage = () => {
   return (
     <div>
       <Header />
-      <Trending />
+      <LifeStyle />
       <Footer />
     </div>
   );
 };
 
-export default TrendingPage;
+export default LifeStylePage;

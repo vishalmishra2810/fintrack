@@ -3,7 +3,7 @@ import Tags from "../tags/tags";
 import TopStories from "../top-stories/topStories";
 import NewsLetter from "@/src/common/news-letter/newsLetter";
 
-const Trending = () => {
+const LifeStyle = () => {
   return (
     <div>
       <div className="flex flex-1">
@@ -28,4 +28,4 @@ const Trending = () => {
   );
 };
 
-export default Trending;
+export default LifeStyle;
