@@ -1,9 +1,9 @@
-import NewsSidebar from "@/src/common/news-sidebar/news-sidebar";
+import NewsLetter from "@/src/common/news-letter/newsLetter";
 import Tags from "../tags/tags";
 import TopStories from "../top-stories/topStories";
-import NewsLetter from "@/src/common/news-letter/newsLetter";
+import NewsSidebar from "@/src/common/news-sidebar/news-sidebar";
 
-const Trending = () => {
+const India = () => {
   return (
     <div>
       <div className="flex flex-1">
@@ -28,4 +28,4 @@ const Trending = () => {
   );
 };
 
-export default Trending;
+export default India;

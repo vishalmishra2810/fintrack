@@ -1,17 +1,19 @@
 import Footer from "@/src/common/footer";
 import Header from "@/src/common/header";
 import SpeedDial from "@/src/common/speed-dial/speed-dial";
-import Politics from "@/src/components/politics/politics";
+import Pagination from "@/src/components/pagination/pagination";
+import Sports from "@/src/components/sports/sports";
 
-const PoliticsPage = () => {
+const SportsPage = () => {
   return (
     <div>
       <Header />
-      <Politics />
+      <Sports />
+      <Pagination />
       <SpeedDial />
       <Footer />
     </div>
   );
 };
 
-export default PoliticsPage;
+export default SportsPage;
