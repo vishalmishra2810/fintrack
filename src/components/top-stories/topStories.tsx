@@ -1,14 +1,19 @@
-import { useEffect } from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 
 const TopStories = () => {
+  const [title, setTitle] = useState("");
   useEffect(() => {
-    const user = window.location.href;
-    console.log("here", user);
+    const title = window.location.pathname;
+    setTitle(title);
+    console.log("heyyy", title);
   }, []);
+
+  const newTitle = title.replace("/", "").toUpperCase();
   return (
     <div className="container my-24 mx-auto md:px-6">
       <section className="mb-32 text-center md:text-left">
-        <h2 className="mb-12 text-center text-3xl font-bold">Top Stories</h2>
+        <h2 className="mb-12 text-center text-[14px] font-bold">{newTitle}</h2>
 
         {[...Array(10)].map((_, index) => (
           <div className="mb-6 flex flex-wrap">
@@ -68,3 +73,6 @@ const TopStories = () => {
 };
 
 export default TopStories;
+function useClient() {
+  throw new Error("Function not implemented.");
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Header_Links } from "./Links/links";
 
@@ -9,13 +8,9 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo with the Image component */}
         <div className="flex items-center w-full mr-[20px]">
-          {/* <Link href={"/"}>
-            <h1 className="text-white cursor-pointer text-2xl font-bold pr-2">
-              <Image src="/logo.jpeg" alt="Logo" width={100} height={24} />
-            </h1>
-          </Link> */}
-
-          <div className="mr-5 text-[50px] text-[#e44d3b]">JM</div>
+          <Link href={"/"} className="mr-5 text-[50px] text-[#e44d3b]">
+            JM
+          </Link>
           <input
             type="text"
             placeholder="Search"
