@@ -9,11 +9,13 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo with the Image component */}
         <div className="flex items-center w-full mr-[20px]">
-          <Link href={"/"}>
+          {/* <Link href={"/"}>
             <h1 className="text-white cursor-pointer text-2xl font-bold pr-2">
-              <Image src="/artist.png" alt="Logo" width={100} height={24} />
+              <Image src="/logo.jpeg" alt="Logo" width={100} height={24} />
             </h1>
-          </Link>
+          </Link> */}
+
+          <div className="mr-5 text-[50px] text-[#e44d3b]">JM</div>
           <input
             type="text"
             placeholder="Search"
