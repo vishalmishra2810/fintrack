@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="bg-[#191818] dark:bg-gray-900">
@@ -40,25 +42,33 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
-                Trending in Sports
+              <h2 className="mb-6 text-[18px] font-semibold text-gray-900 uppercase text-white">
+                Learn More About Us!
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a
-                    href="https://github.com/themesberg/flowbite"
-                    className="hover:underline text-white"
+              <ul className="text-gray-500 dark:text-gray-400 text-[14px] font-medium">
+                <li className="mt-4">
+                  <Link
+                    href={"/faq"}
+                    className="hover:text-[#e44d3b] text-white"
                   >
-                    Github
-                  </a>
+                    Faq
+                  </Link>
                 </li>
-                <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline text-white"
+                <li className="mt-4">
+                  <Link
+                    href={"/contact"}
+                    className="hover:text-[#e44d3b] text-white"
                   >
-                    Discord
-                  </a>
+                    Contact
+                  </Link>
+                </li>
+                <li className="mt-4">
+                  <Link
+                    href={"/about"}
+                    className="hover:text-[#e44d3b] text-white"
+                  >
+                    About
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -86,13 +96,13 @@ const Footer = () => {
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
             <a href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
+              Journal Motion™
             </a>
-            . All Rights Reserved.
+            All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <a
-              href="#"
+              href="/facebook"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg

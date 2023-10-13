@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 const TopStories = () => {
+  useEffect(() => {
+    const user = window.location.href;
+    console.log("here", user);
+  }, []);
   return (
     <div className="container my-24 mx-auto md:px-6">
       <section className="mb-32 text-center md:text-left">

@@ -21,10 +21,6 @@ export const Header_Links = [
     label: "LifeStyle",
     path: URLPaths.LifeStyle,
   },
-  {
-    label: "Contact",
-    path: URLPaths.Contact,
-  },
 ];
 
 export const auth_Links = [
