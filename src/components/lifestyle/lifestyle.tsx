@@ -9,7 +9,7 @@ const LifeStyle = () => {
       <div className="flex flex-1">
         <p className="pl-6 pr-6 mt-6">
           {[...Array(3)].map((_, index) => (
-            <div>
+            <div className="mb-[20px]">
               <NewsSidebar />
             </div>
           ))}

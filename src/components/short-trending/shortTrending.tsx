@@ -1,6 +1,6 @@
 const ShortTrending = () => {
   return (
-    <div id="accordionFlushExample">
+    <div id="accordionFlushExample" className="mx-10">
       <div className="rounded-none border border-l-0 border-r-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
         <h2 className="mb-0" id="flush-headingOne">
           <button
@@ -11,7 +11,7 @@ const ShortTrending = () => {
             aria-expanded="false"
             aria-controls="flush-collapseOne"
           >
-            Accordion Item #1
+            Short Trending
             <span className="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

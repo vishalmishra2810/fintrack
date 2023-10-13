@@ -5,10 +5,10 @@ import { Header_Links } from "./Links/links";
 
 const Header = () => {
   return (
-    <div className="bg-[#e44d3b] headerWidth">
+    <div className="bg-[#191818] headerWidth">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo with the Image component */}
-        <div className="flex items-center">
+        <div className="flex items-center w-full mr-[20px]">
           <Link href={"/"}>
             <h1 className="text-white cursor-pointer text-2xl font-bold pr-2">
               <Image src="/artist.png" alt="Logo" width={100} height={24} />

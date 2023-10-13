@@ -1,13 +1,6 @@
 import Header from "@/src/common/header";
-import LatestArticles from "@/src/components/latestArticles/latestArticles";
 import Footer from "@/src/common/footer";
-import Articles from "@/src/components/articles/articles";
-import TopStories from "@/src/components/top-stories/topStories";
-import RelatedArticles from "@/src/components/related-articles/relatedArticles";
-import Slide from "@/src/components/slide/slide";
-import ShortTrending from "@/src/components/short-trending/shortTrending";
-import Timeline from "@/src/components/timeline/timeline";
-import SpeedDial from "@/src/common/speed-dial/speed-dial";
+import HomePage from "@/src/common/homepage/homepage";
 
 export default function Home() {
   return (
@@ -15,15 +8,8 @@ export default function Home() {
       <main className="flex flex-col items-center justify-between">
         <Header />
       </main>
-      <Slide />
-      <LatestArticles />
-      <ShortTrending />
-      <Articles />
-      <TopStories />
-      <Timeline />
-      <RelatedArticles />
-      <SpeedDial />
-      <div >
+      <HomePage />
+      <div>
         <Footer />
       </div>
     </div>
