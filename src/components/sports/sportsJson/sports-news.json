@@ -1,0 +1,29 @@
+{
+  "sportsNews": [
+    {
+      "title": "Team Triumphs in Grand Soccer Championship",
+      "content": "In an exciting match held at the city stadium, Team A emerged victorious in the Grand Soccer Championship. The team showcased exceptional teamwork and skill, securing a 3-1 victory over their opponents. Fans cheered as Team A players celebrated their well-deserved win.",
+      "writer": "Vishal Mishra"
+    },
+    {
+      "title": "Record-Breaking Marathon Run in Annual Sports Event",
+      "content": "In the annual marathon event, athlete John Smith set a new record by completing the 42-kilometer race in just 2 hours and 10 minutes. Spectators and fellow athletes applauded John's incredible feat, making it a memorable moment in the history of the sports event.",
+      "writer": "Vishal Mishra"
+    },
+    {
+      "title": "Tennis Star Advances to Semifinals in International Tournament",
+      "content": "Renowned tennis player Sarah Johnson showcased her exceptional skills in the international tennis tournament, securing a spot in the semifinals. Sarah's impressive performance in the quarterfinal match left fans in awe as she defeated her opponent with a stunning display of power and precision.",
+      "writer": "Vishal Mishra"
+    },
+    {
+      "title": "Local Gymnast Wins Gold Medal in World Championships",
+      "content": "Young gymnast Emily Davis made her country proud by winning a gold medal in the World Gymnastics Championships. Emily's flawless routines and graceful movements captured the attention of the judges and the audience, earning her the top spot on the podium.",
+      "writer": "Vishal Mishra"
+    },
+    {
+      "title": "Basketball Team Clinches Overtime Victory in Intense Game",
+      "content": "In a nail-biting basketball game that went into overtime, Team B secured a thrilling victory over their rivals. The match was intense, with both teams displaying remarkable skills and determination. Team B's last-minute basket sealed their win, leaving fans on the edge of their seats.",
+      "writer": "Vishal Mishra"
+    }
+  ]
+}

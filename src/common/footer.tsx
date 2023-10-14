@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
+              <h2 className="mb-6 text-[18px] font-semibold text-gray-900 uppercase text-white">
                 Popular Categories
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -22,12 +22,9 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <a
-                    href="https://flowbite.com/"
-                    className="hover:underline text-white"
-                  >
+                  <Link href={"/india"} className="hover:underline text-white">
                     Israel
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -63,19 +60,25 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
+              <h2 className="mb-6 text-[18px] font-semibold text-gray-900 uppercase text-white">
                 Trending in World
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline text-white">
-                    Privacy Policy
-                  </a>
+                  <Link
+                    href={"/world"}
+                    className="hover:text-[#e44d3b] text-white"
+                  >
+                    Israel vs Palestine
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline text-white">
-                    Terms &amp; Conditions
-                  </a>
+                  <Link
+                    href={"/cricket"}
+                    className="hover:text-[#e44d3b] text-white"
+                  >
+                    Cricket World Cup
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -85,7 +88,7 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between text-white">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
+            <a href="/jm" className="hover:underline">
               Journal Motion™
             </a>
             All Rights Reserved.

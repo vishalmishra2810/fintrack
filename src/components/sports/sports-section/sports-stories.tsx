@@ -1,16 +1,16 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import IndiaNews from "../indiaNewsJson/india-news.json";
-import { IndiaBlogData } from "@/response/india-blog.response";
+import SportsNews from "../sportsJson/sports-news.json";
+import { SportsBlogData } from "@/response/sports-blog.response";
 
-const IndiaStories = () => {
+const SportsStories = () => {
   return (
     <div className="container mb-24 mt-5 mx-auto md:px-6">
       <section className="mb-32 text-center md:text-left">
-        <h2 className="mb-12 text-center text-[20px] font-bold">India</h2>
+        <h2 className="mb-12 text-center text-[20px] font-bold">Sports</h2>
 
-        {IndiaNews.news.map((data: IndiaBlogData, index: number) => {
+        {SportsNews.sportsNews.map((data: SportsBlogData, index: number) => {
           const truncatedContent =
             data.content.split(" ").slice(0, 20).join(" ") +
             (data.content.split(" ").length > 20 ? "..." : "");
@@ -75,4 +75,4 @@ const IndiaStories = () => {
   );
 };
 
-export default IndiaStories;
+export default SportsStories;
