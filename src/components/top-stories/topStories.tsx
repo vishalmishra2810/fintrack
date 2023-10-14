@@ -4,9 +4,15 @@ import React, { useEffect, useState } from "react";
 const TopStories = () => {
   const [title, setTitle] = useState("");
   useEffect(() => {
+    fetch("http://localhost:3000/api-jm/review")
+      .then((data: any) => {
+        return data.json();
+      })
+      .then((response: any) => {
+        console.log("hey ", response);
+      });
     const title = window.location.pathname;
     setTitle(title);
-    console.log("heyyy", title);
   }, []);
 
   const newTitle = title.replace("/", "").toUpperCase();
@@ -28,7 +34,7 @@ const TopStories = () => {
                   className="w-full"
                   alt="Louvre"
                 />
-                <a href="#!">
+                <a href="/blog">
                   <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"></div>
                 </a>
               </div>

@@ -21,9 +21,10 @@ const Blog = () => {
         <div className="h-[250px] min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-20 dark:opacity-100"></div>
         <p className="pl-6">
           <BlogSection />
+          <Comment />
         </p>
       </div>
-      <Comment />
+
       <NewsLetter />
     </div>
   );
