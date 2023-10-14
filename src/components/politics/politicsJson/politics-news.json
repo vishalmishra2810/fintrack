@@ -1,0 +1,29 @@
+{
+  "politicsNews": [
+    {
+      "title": "Government Announces New Economic Stimulus Package",
+      "content": "In a major development, the government unveiled a new economic stimulus package aimed at boosting various sectors of the economy. The package includes tax cuts, financial aid to small businesses, and infrastructure investments. Experts are optimistic about the potential positive impact on the country's economy.",
+      "writer": "Vishal Mishra"
+    },
+    {
+      "title": "Opposition Parties Protest Controversial Bill",
+      "content": "Members of opposition parties staged a protest today against a controversial bill passed in the parliament. The bill has sparked widespread debates due to its potential implications on civil liberties. Protestors are demanding a review of the bill and greater transparency in the legislative process.",
+      "writer": "Vishal Mishra"
+    },
+    {
+      "title": "Political Leaders Address Climate Change Crisis",
+      "content": "Several political leaders participated in a climate change summit, emphasizing the urgency of addressing environmental issues. They discussed strategies to reduce carbon emissions, promote renewable energy, and protect natural habitats. The event highlighted the need for international collaboration to combat climate change effectively.",
+      "writer": "Vishal Mishra"
+    },
+    {
+      "title": "Government Allocates Funds for Healthcare Reform",
+      "content": "The government allocated a significant budget for healthcare reform initiatives. The funds will be used to improve healthcare infrastructure, provide medical training, and enhance access to essential healthcare services. Health officials and professionals have welcomed the move, stating that it will lead to better healthcare outcomes for citizens.",
+      "writer": "Vishal Mishra"
+    },
+    {
+      "title": "Diplomatic Talks Begin Between Countries",
+      "content": "Diplomatic talks commenced today between two countries to address longstanding issues and promote regional stability. High-level representatives from both nations engaged in discussions aimed at finding common ground and fostering cooperation. The talks are seen as a positive step towards resolving diplomatic tensions and enhancing bilateral relations.",
+      "writer": "Vishal Mishra"
+    }
+  ]
+}

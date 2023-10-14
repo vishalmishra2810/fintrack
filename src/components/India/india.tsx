@@ -1,8 +1,8 @@
 import NewsLetter from "@/src/common/news-letter/newsLetter";
 import Tags from "../tags/tags";
 import NewsSidebar from "@/src/common/news-sidebar/news-sidebar";
-import TopStories from "./india-section/top-stories";
-import IndiaStories from "./india-section/top-stories";
+import TopStories from "./india-section/india-stories";
+import IndiaStories from "./india-section/india-stories";
 
 const India = () => {
   return (

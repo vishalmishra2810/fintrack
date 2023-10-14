@@ -57,7 +57,7 @@ const IndiaStories = () => {
                 </div>
                 <p className="mb-6 text-neutral-500 dark:text-neutral-300">
                   <small>
-                    Published <u>13.01.2022</u> by
+                    Published <div>13.01.2022</div> by
                     <Link href={"#"} className="ml-2">
                       {data.writer}
                     </Link>
