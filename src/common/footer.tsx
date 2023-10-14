@@ -6,16 +6,9 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" className="flex items-center">
-              <img
-                src="https://flowbite.com/docs/images/logo.svg"
-                className="h-8 mr-3"
-                alt="FlowBite Logo"
-              />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-                Flowbite
-              </span>
-            </a>
+            <Link href={"/"} className="mr-5 text-[50px] text-[#e44d3b]">
+              JM
+            </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
@@ -24,12 +17,9 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a
-                    href="https://flowbite.com/"
-                    className="hover:underline text-white"
-                  >
+                  <Link href={"/india"} className="hover:underline text-white">
                     India
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
                   <a

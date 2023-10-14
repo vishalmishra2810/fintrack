@@ -17,10 +17,10 @@ const TopStories = () => {
   }, []);
 
   const length = ReviewJson.movies.length;
-  console.log("length is here", length);
+  // console.log("length is here", length);
 
   const newTitle = title.replace("/", "").toUpperCase();
-  
+
   return (
     <div className="container mb-24 mt-5 mx-auto md:px-6">
       <section className="mb-32 text-center md:text-left">
