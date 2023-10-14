@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import ReviewJson from "../../json/review.json";
 
 const TopStories = () => {
   const [title, setTitle] = useState("");
@@ -15,7 +16,11 @@ const TopStories = () => {
     setTitle(title);
   }, []);
 
+  const length = ReviewJson.movies.length;
+  console.log("length is here", length);
+
   const newTitle = title.replace("/", "").toUpperCase();
+  
   return (
     <div className="container mb-24 mt-5 mx-auto md:px-6">
       <section className="mb-32 text-center md:text-left">
