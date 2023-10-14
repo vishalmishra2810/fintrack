@@ -17,9 +17,9 @@ const TopStories = () => {
 
   const newTitle = title.replace("/", "").toUpperCase();
   return (
-    <div className="container my-24 mx-auto md:px-6">
+    <div className="container mb-24 mt-5 mx-auto md:px-6">
       <section className="mb-32 text-center md:text-left">
-        <h2 className="mb-12 text-center text-[14px] font-bold">{newTitle}</h2>
+        <h2 className="mb-12 text-center text-[20px] font-bold">{newTitle}</h2>
 
         {[...Array(10)].map((_, index) => (
           <div className="mb-6 flex flex-wrap">
