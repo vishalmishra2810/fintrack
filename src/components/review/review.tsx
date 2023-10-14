@@ -1,10 +1,9 @@
-import NewsLetter from "@/src/common/news-letter/newsLetter";
-import Tags from "../tags/tags";
 import NewsSidebar from "@/src/common/news-sidebar/news-sidebar";
-import TopStories from "./india-section/top-stories";
-import IndiaStories from "./india-section/top-stories";
+import Tags from "../tags/tags";
+import TopStories from "../top-stories/topStories";
+import NewsLetter from "@/src/common/news-letter/newsLetter";
 
-const India = () => {
+const Review = () => {
   return (
     <div>
       <div className="flex flex-1">
@@ -20,7 +19,7 @@ const India = () => {
         </p>
         <div className="h-[250px] min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-20 dark:opacity-100"></div>
         <p className="pl-6">
-          <IndiaStories />
+          <TopStories />
         </p>
       </div>
 
@@ -29,4 +28,4 @@ const India = () => {
   );
 };
 
-export default India;
+export default Review;

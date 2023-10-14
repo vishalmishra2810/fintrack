@@ -1,0 +1,29 @@
+{
+  "movies": [
+    {
+      "title": "The Shawshank Redemption",
+      "rating": "9.3/10",
+      "review": "A gripping tale of hope and friendship set in the harsh environment of Shawshank prison."
+    },
+    {
+      "title": "The Godfather",
+      "rating": "9.2/10",
+      "review": "An epic crime saga exploring the themes of power, family, and loyalty in the world of organized crime."
+    },
+    {
+      "title": "Pulp Fiction",
+      "rating": "8.9/10",
+      "review": "A non-linear narrative featuring interconnected stories of crime, redemption, and dark humor."
+    },
+    {
+      "title": "Inception",
+      "rating": "8.8/10",
+      "review": "A mind-bending sci-fi thriller that explores the concept of dream infiltration and subconscious manipulation."
+    },
+    {
+      "title": "The Dark Knight",
+      "rating": "9.0/10",
+      "review": "A superhero masterpiece featuring the iconic rivalry between Batman and the Joker, exploring chaos and morality."
+    }
+  ]
+}
