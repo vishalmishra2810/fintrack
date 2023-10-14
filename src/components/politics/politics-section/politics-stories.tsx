@@ -5,7 +5,6 @@ import PoliticsNews from "../politicsJson/politics-news.json";
 import { PoliticsBlogData } from "@/response/politics-blog.response";
 
 const PoliticsStories = () => {
-  console.log("you r here!");
   return (
     <div className="container mb-24 mt-5 mx-auto md:px-6">
       <section className="mb-32 text-center md:text-left">
