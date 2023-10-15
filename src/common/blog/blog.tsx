@@ -22,10 +22,9 @@ const Blog = () => {
         <p className="pl-6">
           <BlogSection />
           <Comment />
+          <NewsLetter />
         </p>
       </div>
-
-      <NewsLetter />
     </div>
   );
 };
