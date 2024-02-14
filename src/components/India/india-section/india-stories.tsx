@@ -1,10 +1,14 @@
 "use client";
+
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import React from "react";
 import IndiaNews from "../indiaNewsJson/india-news.json";
 import { IndiaBlogData } from "@/response/india-blog.response";
 
 const IndiaStories = () => {
+  const pathname = usePathname();
+  console.log("pathname is here", pathname);
   return (
     <div className="container mb-24 mt-5 mx-auto md:px-6">
       <section className="mb-32 text-center md:text-left">
