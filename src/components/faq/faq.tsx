@@ -70,9 +70,9 @@ const Faq = () => {
                   How does support work?
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  We're aware of the importance of well qualified support, that
-                  is why we decided that support will only be provided by the
-                  authors that actually worked on this project.
+                  We&apos;re aware of the importance of well qualified support,
+                  that is why we decided that support will only be provided by
+                  the authors that actually worked on this project.
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
                   Feel free to{" "}
@@ -84,7 +84,7 @@ const Faq = () => {
                   >
                     contact us
                   </a>{" "}
-                  and we'll help you out as soon as we can.
+                  and we&apos;ll help you out as soon as we can.
                 </p>
               </div>
               <div className="mb-10">
@@ -105,10 +105,10 @@ const Faq = () => {
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
                   You can use Windster for an unlimited amount of projects,
-                  whether it's a personal website, a SaaS app, or a website for
-                  a client. As long as you don't build a product that will
-                  directly compete with Windster either as a UI kit, theme, or
-                  template, it's fine.
+                  whether it&apos;s a personal website, a SaaS app, or a website
+                  for a client. As long as you don&apos;t build a product that
+                  will directly compete with Windster either as a UI kit, theme,
+                  or template, it&apos;s fine.
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
                   Find out more information by{" "}

@@ -16,7 +16,7 @@ const NewsSidebar = () => {
         </h5>
         <p className="text-base text-neutral-600 dark:text-neutral-200">
           Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          bulk of the card&apos;s content.
         </p>
       </div>
       <ul className="w-full">
