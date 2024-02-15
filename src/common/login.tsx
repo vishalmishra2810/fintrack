@@ -1,10 +1,11 @@
+import Image from "next/image";
 import React from "react";
 
 const Login = () => {
   return (
     <section className="flex flex-col md:flex-row h-screen items-center">
       <div className="bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/3 h-screen">
-        <img
+        <Image
           src="https://source.unsplash.com/random"
           alt=""
           className="w-full h-full object-cover"

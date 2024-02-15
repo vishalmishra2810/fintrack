@@ -9,7 +9,7 @@ const Trending = () => {
       <div className="flex flex-1">
         <p className="pl-6 pr-6 mt-6">
           {[...Array(3)].map((_, index) => (
-            <div>
+            <div key={index}>
               <NewsSidebar />
             </div>
           ))}

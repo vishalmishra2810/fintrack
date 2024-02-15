@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import IndiaNews from "../indiaNewsJson/india-news.json";
 import { IndiaBlogData } from "@/response/india-blog.response";
+import Image from "next/image";
 
 const IndiaStories = () => {
   const pathname = usePathname();
@@ -27,7 +28,7 @@ const IndiaStories = () => {
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
-                  <img
+                  <Image
                     src="https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg"
                     className="w-full"
                     alt="Louvre"

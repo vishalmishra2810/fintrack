@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import SportsNews from "../sportsJson/sports-news.json";
 import { SportsBlogData } from "@/response/sports-blog.response";
+import Image from "next/image";
 
 const SportsStories = () => {
   return (
@@ -23,7 +24,7 @@ const SportsStories = () => {
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
-                  <img
+                  <Image
                     src="https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg"
                     className="w-full"
                     alt="Louvre"

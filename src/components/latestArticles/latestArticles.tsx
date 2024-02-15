@@ -2,6 +2,7 @@ import { LatestArticlesBlogData } from "@/response/latest-articles.response";
 import LatestArticleJson from "./latest-articles-news.json";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const LatestArticles = () => {
   const profiles = [
@@ -27,14 +28,14 @@ const LatestArticles = () => {
                   (data.content.split(" ").length > 20 ? "..." : "");
                 const dynamicId = data.title.replace(/\s+/g, "-");
                 return (
-                  <div className="mb-6">
+                  <div className="mb-6" key={index}>
                     <a href="/blog">
                       <div
                         className="relative mb-6 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
                         data-te-ripple-init
                         data-te-ripple-color="light"
                       >
-                        <img
+                        <Image
                           src="https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg"
                           className="w-full"
                           alt="Louvre"
