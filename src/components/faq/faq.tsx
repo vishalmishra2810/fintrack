@@ -22,7 +22,7 @@ const Faq = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  What do you mean by "Figma assets"?
+                  What do you mean by &quot;Figma assets&quot;?
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
                   You will have access to download the full Figma project
@@ -45,7 +45,7 @@ const Faq = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  What does "lifetime access" exactly mean?
+                  What does &quot;lifetime access&quot; exactly mean?
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
                   Once you have purchased either the design, code, or both
@@ -137,7 +137,7 @@ const Faq = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  What does "free updates" include?
+                  What does &quot;free updates&quot; include?
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
                   The free updates that will be provided is based on the{" "}
