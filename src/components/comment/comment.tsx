@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const Comment = () => {
   return (
     <section className="bg-white dark:bg-gray-900 py-8 lg:py-16 antialiased">
@@ -33,7 +31,7 @@ const Comment = () => {
           <footer className="flex justify-between items-center mb-2">
             <div className="flex items-center">
               <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-                <Image
+                <img
                   className="mr-2 w-6 h-6 rounded-full"
                   src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
                   alt="Michael Gough"
@@ -127,7 +125,7 @@ const Comment = () => {
           <footer className="flex justify-between items-center mb-2">
             <div className="flex items-center">
               <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-                <Image
+                <img
                   className="mr-2 w-6 h-6 rounded-full"
                   src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
                   alt="Jese Leos"
@@ -218,7 +216,7 @@ const Comment = () => {
           <footer className="flex justify-between items-center mb-2">
             <div className="flex items-center">
               <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-                <Image
+                <img
                   className="mr-2 w-6 h-6 rounded-full"
                   src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
                   alt="Bonnie Green"
@@ -310,7 +308,7 @@ const Comment = () => {
           <footer className="flex justify-between items-center mb-2">
             <div className="flex items-center">
               <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-                <Image
+                <img
                   className="mr-2 w-6 h-6 rounded-full"
                   src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
                   alt="Helene Engels"

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const BlogSection = () => {
   return (
     <div className="container my-24 mx-auto md:px-6">
@@ -66,7 +64,7 @@ const BlogSection = () => {
           nam commodi! Magnam, labore.
         </p>
 
-        <Image
+        <img
           src="https://mdbcdn.b-cdn.net/img/new/slides/194.jpg"
           className="mb-6 w-full rounded-lg shadow-lg dark:shadow-black/20"
           alt=""

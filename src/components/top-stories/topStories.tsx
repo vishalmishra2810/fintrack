@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import ReviewJson from "../../json/review.json";
-import Image from "next/image";
 
 const TopStories = () => {
   const [title, setTitle] = useState("");
@@ -35,7 +34,7 @@ const TopStories = () => {
                 data-te-ripple-init
                 data-te-ripple-color="light"
               >
-                <Image
+                <img
                   src="https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg"
                   className="w-full"
                   alt="Louvre"

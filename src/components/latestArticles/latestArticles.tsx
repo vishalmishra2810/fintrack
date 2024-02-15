@@ -2,7 +2,6 @@ import { LatestArticlesBlogData } from "@/response/latest-articles.response";
 import LatestArticleJson from "./latest-articles-news.json";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 const LatestArticles = () => {
   const profiles = [
@@ -35,7 +34,7 @@ const LatestArticles = () => {
                         data-te-ripple-init
                         data-te-ripple-color="light"
                       >
-                        <Image
+                        <img
                           src="https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg"
                           className="w-full"
                           alt="Louvre"
