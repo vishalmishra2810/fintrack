@@ -1,5 +1,5 @@
 const IndiaInformation = () => {
-  console.log("ssss");
+
   return <div>hi</div>;
 };
 

@@ -10,14 +10,12 @@ const TopStories = () => {
         return data.json();
       })
       .then((response: any) => {
-        console.log("hey ", response);
       });
     const title = window.location.pathname;
     setTitle(title);
   }, []);
 
   const length = ReviewJson.movies.length;
-  // console.log("length is here", length);
 
   const newTitle = title.replace("/", "").toUpperCase();
 
