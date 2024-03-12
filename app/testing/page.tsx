@@ -7,7 +7,7 @@ const TestingPage = () => {
   return (
     <React.Fragment>
       <Header />
-      <Testing />
+      <Testing jsonData={undefined} />
       <Footer />
     </React.Fragment>
   );

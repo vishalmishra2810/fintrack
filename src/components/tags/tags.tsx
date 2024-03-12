@@ -12,9 +12,9 @@ const Tags = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="feather feather-bell-off mr-2"
           >
             <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
@@ -36,9 +36,9 @@ const Tags = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="feather feather-arrow-right mr-2"
           >
             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -57,9 +57,9 @@ const Tags = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="feather feather-activity mr-2"
           >
             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
@@ -77,9 +77,9 @@ const Tags = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="feather feather-archive mr-2"
           >
             <polyline points="21 8 21 21 3 21 3 8"></polyline>
@@ -99,9 +99,9 @@ const Tags = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="feather feather-hard-drive mr-2"
           >
             <line x1="22" y1="12" x2="2" y2="12"></line>
