@@ -1,6 +1,32 @@
+"use client";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [data, setData] = useState<any>(null); 
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:8080/api/name"); // Your API endpoint
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+
+    // Cleanup function if necessary
+    return () => {
+      // Cleanup code if necessary
+    };
+  }, []);
+
   return (
     <footer className="bg-[#191818] dark:bg-gray-900">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">

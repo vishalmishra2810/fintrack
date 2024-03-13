@@ -1,6 +1,6 @@
 import Footer from "@/src/common/footer";
 import Header from "@/src/common/header";
-import Testing from "@/src/components/testing/testing";
+import Testing from "@/src/components/admin/previewComponent";
 import React from "react";
 
 const TestingPage = () => {
