@@ -1,4 +1,4 @@
-import { LatestArticlesBlogData } from "@/response/latest-articles.response";
+import { LatestArticlesBlogData } from "@/src/response/latest-articles.response";
 import LatestArticleJson from "./latest-articles-news.json";
 import React from "react";
 import Link from "next/link";

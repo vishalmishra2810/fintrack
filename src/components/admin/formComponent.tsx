@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Testing from './previewComponent';
-import { newsFormService } from '@/service/news.service';
+import { newsFormService } from '@/src/service/news.service';
 
 const MyFormComponent = ({ onFormSubmit }: any) => {
   const [formData, setFormData] = useState({
@@ -21,11 +21,18 @@ const MyFormComponent = ({ onFormSubmit }: any) => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    // handle form submission
-    onFormSubmit(formData);
-    const newsFormResponse = await newsFormService.newsFormData(JSON.stringify(formData));
-    console.log('news sds', newsFormResponse)
+  
+    try {
+      onFormSubmit(formData);
+
+      const newsFormResponse = await newsFormService.newsFormData(JSON.stringify(formData));
+      console.log('newsFormResponse', newsFormResponse);
+      
+    } catch (error) {
+      console.error('Error submitting form data:', error);
+    }
   };
+  
 
   return (
     <React.Fragment>

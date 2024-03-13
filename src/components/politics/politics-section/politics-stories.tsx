@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import PoliticsNews from "../politicsJson/politics-news.json";
-import { PoliticsBlogData } from "@/response/politics-blog.response";
+import { PoliticsBlogData } from "@/src/response/politics-blog.response";
 
 const PoliticsStories = () => {
   return (

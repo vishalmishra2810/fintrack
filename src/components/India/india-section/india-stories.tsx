@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import React from "react";
 import IndiaNews from "../indiaNewsJson/india-news.json";
-import { IndiaBlogData } from "@/response/india-blog.response";
+import { IndiaBlogData } from "@/src/response/india-blog.response";
 
 const IndiaStories = () => {
   const pathname = usePathname();

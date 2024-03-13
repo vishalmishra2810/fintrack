@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import SportsNews from "../sportsJson/sports-news.json";
-import { SportsBlogData } from "@/response/sports-blog.response";
+import { SportsBlogData } from "@/src/response/sports-blog.response";
 
 const SportsStories = () => {
   return (

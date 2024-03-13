@@ -1,4 +1,4 @@
-import { TimelineBlogData } from "@/response/timeline-blog.response";
+import { TimelineBlogData } from "@/src/response/timeline-blog.response";
 import TimelineNews from "./timelineJson/timeline-news.json";
 
 const Timeline = () => {
