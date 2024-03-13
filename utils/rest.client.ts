@@ -1,8 +1,7 @@
-// Import Axios library
 import axios from 'axios';
 
 const restClient = axios.create({
-  baseURL: 'https://localhost:8080', 
+  baseURL: 'http://localhost:8080/api', 
   headers: {
     'Content-Type': 'application/json',
   },

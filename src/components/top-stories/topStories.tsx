@@ -1,28 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import ReviewJson from "../../json/review.json";
+import React from "react";
 
 const TopStories = () => {
-  const [title, setTitle] = useState("");
-  useEffect(() => {
-    fetch("http://localhost:3000/api-jm/review")
-      .then((data: any) => {
-        return data.json();
-      })
-      .then((response: any) => {
-      });
-    const title = window.location.pathname;
-    setTitle(title);
-  }, []);
-
-  const length = ReviewJson.movies.length;
-
-  const newTitle = title.replace("/", "").toUpperCase();
 
   return (
     <div className="container mb-24 mt-5 mx-auto md:px-6">
       <section className="mb-32 text-center md:text-left">
-        <h2 className="mb-12 text-center text-[20px] font-bold">{newTitle}</h2>
+        <h2 className="mb-12 text-center text-[20px] font-bold">top stories</h2>
 
         {[...Array(10)].map((_, index) => (
           <div className="mb-6 flex flex-wrap" key={index}>
@@ -82,6 +66,3 @@ const TopStories = () => {
 };
 
 export default TopStories;
-function useClient() {
-  throw new Error("Function not implemented.");
-}

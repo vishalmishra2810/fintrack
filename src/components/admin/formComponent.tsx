@@ -20,14 +20,13 @@ const MyFormComponent = ({ onFormSubmit }: any) => {
   };
 
   const handleSubmit = async (e: any) => {
-    e.preventDefault();
-  
+    e.preventDefault()
     try {
       onFormSubmit(formData);
 
       const newsFormResponse = await newsFormService.newsFormData(JSON.stringify(formData));
-      console.log('newsFormResponse', newsFormResponse);
       
+      console.log('here is logs', newsFormResponse)
     } catch (error) {
       console.error('Error submitting form data:', error);
     }

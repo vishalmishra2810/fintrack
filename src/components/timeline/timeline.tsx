@@ -3,7 +3,7 @@ import TimelineNews from "./timelineJson/timeline-news.json";
 
 const Timeline = () => {
   return (
-    <ol className="border-l border-neutral-300 dark:border-neutral-500 mx-20">
+    <ol className="border-l border-neutral-300 dark:border-neutral-500 mx-20 xs:mx-5">
       {TimelineNews.TimelineNews.map(
         (data: TimelineBlogData, index: number) => {
           return (
