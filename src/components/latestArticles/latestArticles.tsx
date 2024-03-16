@@ -4,12 +4,6 @@ import React from "react";
 import Link from "next/link";
 
 const LatestArticles = () => {
-  const profiles = [
-    { id: 1, name: "Profile 1", imageUrl: "/path/to/image1.jpg" },
-    { id: 2, name: "Profile 2", imageUrl: "/path/to/image2.jpg" },
-    { id: 3, name: "Profile 3", imageUrl: "/path/to/image3.jpg" },
-    // Add more profiles as needed
-  ];
 
   return (
     <React.Fragment>
@@ -28,7 +22,7 @@ const LatestArticles = () => {
                 const dynamicId = data.title.replace(/\s+/g, "-");
                 return (
                   <div className="mb-6" key={index}>
-                    <a href="/blog">
+                    <Link href="/blog/[id]" as={`/blog/${dynamicId}`}>
                       <div
                         className="relative mb-6 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
                         data-te-ripple-init
@@ -70,7 +64,7 @@ const LatestArticles = () => {
                       <p className="text-neutral-500 dark:text-neutral-300">
                         {truncatedContent}
                       </p>
-                    </a>
+                    </Link>
                   </div>
                 );
               }

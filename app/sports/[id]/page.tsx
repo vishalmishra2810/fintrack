@@ -1,20 +1,19 @@
+"use client";
+
 import Footer from "@/src/common/footer";
 import Header from "@/src/common/header";
 import SpeedDial from "@/src/common/speed-dial/speed-dial";
-import Pagination from "@/src/components/pagination/pagination";
-import Review from "@/src/components/review/review";
+import PoliticsSection from "@/src/components/politics/politics-section/politics-blog";
 
-const ReviewPage = () => {
-  console.log('sss')
+const SportsInformation = () => {
   return (
     <div>
       <Header />
-      <Review />
-      <Pagination />
+      <PoliticsSection />
       <SpeedDial />
       <Footer />
     </div>
   );
 };
 
-export default ReviewPage;
+export default SportsInformation;

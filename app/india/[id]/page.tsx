@@ -1,20 +1,19 @@
+"use client";
+
 import Footer from "@/src/common/footer";
 import Header from "@/src/common/header";
 import SpeedDial from "@/src/common/speed-dial/speed-dial";
-import Pagination from "@/src/components/pagination/pagination";
-import Review from "@/src/components/review/review";
+import IndiaBlog from "@/src/components/India/india-section/india-blog";
 
-const ReviewPage = () => {
-  console.log('sss')
+const IndiaInformation = () => {
   return (
     <div>
       <Header />
-      <Review />
-      <Pagination />
+      <IndiaBlog />
       <SpeedDial />
       <Footer />
     </div>
   );
 };
 
-export default ReviewPage;
+export default IndiaInformation;

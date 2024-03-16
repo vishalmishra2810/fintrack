@@ -48,8 +48,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link href={"/india"} className="hover:underline text-white">
-                    Israel
+                  <Link href={"/sports"} className="hover:underline text-white">
+                    Sports
                   </Link>
                 </li>
               </ul>
@@ -92,18 +92,18 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <Link
-                    href={"/world"}
+                    href={"/politics"}
                     className="hover:text-[#e44d3b] text-white"
                   >
-                    Israel vs Palestine
+                    Politics
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href={"/cricket"}
+                    href={"/lifestyle"}
                     className="hover:text-[#e44d3b] text-white"
                   >
-                    Cricket World Cup
+                    Lifestyle
                   </Link>
                 </li>
               </ul>

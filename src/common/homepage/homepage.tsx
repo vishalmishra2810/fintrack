@@ -1,5 +1,5 @@
 "use client";
-import Articles from "@/src/components/articles/articles";
+
 import LatestArticles from "@/src/components/latestArticles/latestArticles";
 import RelatedArticles from "@/src/components/related-articles/relatedArticles";
 import ShortTrending from "@/src/components/short-trending/shortTrending";
@@ -15,10 +15,7 @@ const HomePage = () => {
       <Slide />
       <LatestArticles />
       <ShortTrending />
-      <div className="text-[20px] my-5 flex justify-center items-center">
-        Twitter Space!
-      </div>
-      <div className="mx-[40px]">
+      {/* <div className="mx-[40px]">
         <TwitterTweetEmbed
           tweetId={"1713207336813121836"}
           options={{
@@ -31,9 +28,7 @@ const HomePage = () => {
             align: "right",
           }}
         />
-      </div>
-
-      <Articles />
+      </div> */}
       <TopStories />
       <Timeline />
       <RelatedArticles />

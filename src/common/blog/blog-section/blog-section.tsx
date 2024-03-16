@@ -78,12 +78,12 @@ const BlogSection = () => {
           <li>Amet</li>
         </ul>
 
-        <p>
+        <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
           temporibus nulla voluptatibus accusantium sapiente doloremque.
           Doloribus ratione laboriosam culpa. Ab officiis quidem, debitis
           nostrum in accusantium dolore veritatis eius est?
-        </p>
+        </div>
       </section>
     </div>
   );

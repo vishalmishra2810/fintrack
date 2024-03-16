@@ -30,8 +30,8 @@ const PoliticsStories = () => {
                       alt="Louvre"
                     />
                     <Link
-                      href="/india/[id]"
-                      as={`/india/${dynamicId}`}
+                      href="/politics/[id]"
+                      as={`/politics/${dynamicId}`}
                       className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"
                     />
                   </div>

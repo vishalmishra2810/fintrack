@@ -4,6 +4,7 @@ import TopStories from "../top-stories/topStories";
 import NewsLetter from "@/src/common/news-letter/newsLetter";
 
 const Review = () => {
+  console.log('sss')
   return (
     <div>
       <div className="flex flex-1">

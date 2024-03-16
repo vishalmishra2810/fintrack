@@ -1,8 +1,14 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 import { Header_Links } from "./Links/links";
 
 const Header = () => {
+  const [query, setQuery] = useState("");
+
+  const handleSearch = () => {
+  };
   return (
     <div className="bg-[#191818] headerWidth">
       <div className="container mx-auto flex justify-between items-center">
@@ -14,6 +20,8 @@ const Header = () => {
           <input
             type="text"
             placeholder="Search"
+            onChange={(e) => setQuery(e.target.value)}
+            onClick={handleSearch}
             className="bg-white text-gray-800 w-full px-2 py-1 rounded-lg"
           />
         </div>

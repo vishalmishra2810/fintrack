@@ -1,20 +1,19 @@
+"use client";
+
+import BlogSection from "@/src/common/blog/blog-section/blog-section";
 import Footer from "@/src/common/footer";
 import Header from "@/src/common/header";
 import SpeedDial from "@/src/common/speed-dial/speed-dial";
-import Pagination from "@/src/components/pagination/pagination";
-import Review from "@/src/components/review/review";
 
-const ReviewPage = () => {
-  console.log('sss')
+const BlogInformation = () => {
   return (
     <div>
       <Header />
-      <Review />
-      <Pagination />
+      <BlogSection />
       <SpeedDial />
       <Footer />
     </div>
   );
 };
 
-export default ReviewPage;
+export default BlogInformation;
