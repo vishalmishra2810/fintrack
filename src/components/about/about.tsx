@@ -33,27 +33,100 @@ const About = () => {
                 <h1 className="absolute -top-20   left-0 text-[20px] lg:text-[100px] text-gray-900 font-bold  dark:text-gray-200 opacity-5 md:block hidden">
                   About Us
                 </h1>
-                <h1 className="pl-2 text-3xl font-bold border-l-8 border-blue-400 md:text-5xl dark:text-white">
-                  Welcome to our site
-                </h1>
               </div>
-              <p className="mt-6 mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor
-                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniamLorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor
-              </p>
-              <a
-                href="#"
-                className="px-4 py-3 text-gray-50 transition-all transform bg-blue-400 rounded-[80px] hover:bg-blue-500 dark:hover:text-gray-100 dark:text-gray-100 "
-              >
-                Learn more
-              </a>
+              <div className="bg-gray-100 min-h-screen py-10">
+                <div className="container mx-auto px-4">
+                  <h1 className="text-3xl font-bold text-center mb-6">
+                    About JournalMotion
+                  </h1>
+                  <p className="text-lg mb-6">
+                    At JournalMotion, we are more than just a news media
+                    platform; we are your gateway to the world's latest events,
+                    trends, and developments. With a commitment to delivering
+                    timely and accurate news coverage, we strive to keep our
+                    audience informed, engaged, and empowered.
+                  </p>
+                  <div className="mb-8">
+                    <h2 className="text-xl font-semibold mb-2">Our Mission</h2>
+                    <p className="text-lg mb-6">
+                      Our mission at JournalMotion is clear: to provide
+                      comprehensive and unbiased news coverage that empowers
+                      individuals to make informed decisions. We understand the
+                      importance of reliable information in today's fast-paced
+                      world, and we aim to be your trusted source for news that
+                      matters.
+                    </p>
+                    <h2 className="text-xl font-semibold mb-2">
+                      Comprehensive Coverage
+                    </h2>
+                    <p className="text-lg mb-6">
+                      From breaking news stories to in-depth analyses, our team
+                      of dedicated journalists works tirelessly to bring you the
+                      most relevant and up-to-date information. Whether it's
+                      politics, business, technology, health, or culture, we
+                      cover a wide range of topics to ensure that you stay
+                      informed about the issues that impact your life.
+                    </p>
+                    <h2 className="text-xl font-semibold mb-2">
+                      Unwavering Integrity
+                    </h2>
+                    <p className="text-lg mb-6">
+                      Integrity is at the core of everything we do at
+                      JournalMotion. We adhere to the highest standards of
+                      journalistic ethics and strive to present the facts
+                      objectively and impartially. Our commitment to
+                      truthfulness, accuracy, and transparency is unwavering,
+                      ensuring that our readers can trust the information they
+                      receive from us.
+                    </p>
+                    <h2 className="text-xl font-semibold mb-2">
+                      Founder's Vision
+                    </h2>
+                    <p className="text-lg mb-6">
+                      Founded by visionary entrepreneur Vishal Mishra,
+                      JournalMotion was born out of a passion for journalism and
+                      a desire to make a positive impact on society. With years
+                      of experience in the media industry, Vishal envisioned a
+                      platform that would not only inform but also inspire and
+                      empower individuals to engage with the world around them.
+                    </p>
+                    <h2 className="text-xl font-semibold mb-2">
+                      Connect with Us
+                    </h2>
+                    <p className="text-lg mb-6">
+                      At JournalMotion, we believe in the power of community.
+                      That's why we invite you to connect with us on our various
+                      platforms – from our website to social media channels.
+                      Join the conversation, share your thoughts, and stay
+                      connected with the latest news and updates from
+                      JournalMotion.
+                    </p>
+                    <h2 className="text-xl font-semibold mb-2">Our Promise</h2>
+                    <p className="text-lg mb-6">
+                      As we continue to grow and evolve, our commitment to
+                      excellence remains unchanged. We promise to uphold the
+                      highest standards of journalism, to provide you with
+                      accurate and reliable information, and to serve as your
+                      trusted guide in an ever-changing world.
+                    </p>
+                    <p className="text-lg mb-6">
+                      <strong>Thank You</strong>
+                      <br />
+                      We are grateful for the opportunity to serve you, our
+                      readers, and we thank you for your continued support.
+                      Together, we will journey towards a future where knowledge
+                      is power, and informed decisions shape our world for the
+                      better.
+                    </p>
+                  </div>
+                  <a
+                    href="/"
+                    className="px-4 py-3 text-gray-50 transition-all transform bg-blue-400 rounded-[80px] hover:bg-blue-500 dark:hover:text-gray-100 dark:text-gray-100 "
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

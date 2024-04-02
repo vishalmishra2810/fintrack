@@ -1,24 +1,53 @@
 "use client";
 
-import React, { useState } from 'react';
-import InputField from './input-field';
-import Reflection from './reflection';
+import React, { useState } from "react";
+import InputField from "./input-field";
+import Reflection from "./reflection";
+import { shortsFormService } from "@/src/service/shorts.service";
 
 const ShortsAdmin = () => {
-    const [inputValue, setInputValue] = useState('');
+    const [inputValues, setInputValues] = useState({
+        value1: "",
+        value2: ""
+    });
 
     const handleInputChange = (e: any) => {
-        setInputValue(e.target.value);
+        setInputValues({
+            ...inputValues,
+            value1: e.target.value
+        });
+    };
+
+    const handleInputChange2 = (e: any) => {
+        setInputValues({
+            ...inputValues,
+            value2: e.target.value
+        });
+    };
+
+    const handleOnSubmit = async(e: any) => {
+        e.preventDefault();
+        try {
+            if (inputValues.value1.length > 0 && inputValues.value2.length > 0) {
+                const shortsFormResponse = await shortsFormService.shortsFormData(JSON.stringify(inputValues));
+                console.log('true', shortsFormResponse);
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+        }
     };
 
     return (
-        <div className="bg-gray-100 min-h-screen flex justify-center items-center">
-            <div className="w-96 bg-white shadow-lg p-6 rounded-lg flex justify-between items-center">
-                <InputField value={inputValue} onChange={handleInputChange} />
-                <Reflection value={inputValue} />
-            </div>
+        <div className="m-10">
+            <form onSubmit={handleOnSubmit}>
+                <InputField value={inputValues.value1} onChange={handleInputChange} />
+                <InputField value={inputValues.value2} onChange={handleInputChange2} />
+                <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md">Submit</button>
+            </form>
+            <Reflection value={inputValues.value1} />
+            <Reflection value={inputValues.value2} />
         </div>
     );
 };
 
-export default ShortsAdmin
+export default ShortsAdmin;
