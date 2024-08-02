@@ -1,6 +1,6 @@
 import Login from "@/src/common/login";
 
-const ReviewPage = () => {
+const LoginPage = () => {
 
   return (
     <div>
@@ -9,4 +9,4 @@ const ReviewPage = () => {
   );
 };
 
-export default ReviewPage;
+export default LoginPage;
