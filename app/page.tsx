@@ -1,16 +1,17 @@
-import Header from "@/src/common/header";
-import Footer from "@/src/common/footer";
-import HomePage from "@/src/common/homepage/homepage";
+
+import LeftSideBar from "@/src/common/left_sidebar";
+import MainPage from "@/src/common/mainpage/mainpage";
+import RightSidebar from "@/src/common/right_sidebar";
 
 export default function Home() {
   return (
     <div className="bg-[#f2f2f2] overflow-auto">
       <main className="flex flex-col items-center justify-between">
-        <Header />
+        <LeftSideBar />
       </main>
-      <HomePage />
+      <MainPage />
       <div>
-        <Footer />
+        <RightSidebar />
       </div>
     </div>
   );

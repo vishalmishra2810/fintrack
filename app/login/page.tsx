@@ -1,7 +1,12 @@
 import Login from "@/src/common/login";
 
-const LoginPage = () => {
-  return <Login />;
+const ReviewPage = () => {
+
+  return (
+    <div>
+      <Login/>
+    </div>
+  );
 };
 
-export default LoginPage;
+export default ReviewPage;
