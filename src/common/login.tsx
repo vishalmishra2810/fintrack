@@ -76,7 +76,7 @@ const Login = () => {
                   </span>
                 </button>
                 <p className="mt-6 text-xs text-gray-600 text-center">
-                  I agree to abide by Fintrack's 
+                I agree to abide by Fintrack&apos;s 
                   <a href="#" className="ml-1 border-b border-gray-500 border-dotted">
                     Terms of Service
                   </a>
