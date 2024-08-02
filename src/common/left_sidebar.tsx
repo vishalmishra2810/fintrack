@@ -35,8 +35,8 @@ const LeftSideBar = () => {
           <Link href="/transactions" className="flex items-center text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
             <FaListAlt className="mr-2" /> Transactions
           </Link>
-          <Link href="/reports" className="flex items-center text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
-            <FaChartLine className="mr-2" /> Reports
+          <Link href="/budget" className="flex items-center text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
+            <FaChartLine className="mr-2" /> Make Budget
           </Link>
           <Link href="/settings" className="flex items-center text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
             <FaCog className="mr-2" /> Settings

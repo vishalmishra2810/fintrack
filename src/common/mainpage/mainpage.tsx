@@ -1,20 +1,22 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
-import { FaHome, FaChartLine, FaListAlt, FaCog, FaUserCircle } from "react-icons/fa";
-import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import { Line } from 'react-chartjs-2';
+import { Line, Pie } from 'react-chartjs-2';
 import 'chart.js/auto'; // Import the entire chart.js library
 
-const MainPage = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const [calendarValue, onCalendarChange] = useState(new Date());
+type Expense = {
+  name: string;
+  amount: number;
+};
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+interface ExpenseChartProps {
+  salary: number;
+  fixedExpenses: number;
+  otherExpenses: Expense[];
+}
+
+const MainPage = () => {
 
   // Sample data for the graph
   const spendingData = {
@@ -37,6 +39,39 @@ const MainPage = () => {
 
   const remainingAmount = 500; 
   const financialStatus = remainingAmount - spendingData.datasets[0].data.reduce((a, b) => a + b, 0);
+
+  const salary = 5000; // Monthly salary
+  const fixedExpenses = 2000; // Fixed expenses like EMI, rent
+  const otherExpenses: Expense[] = [
+    { name: "Groceries", amount: 500 },
+    { name: "Transport", amount: 300 },
+    { name: "Utilities", amount: 150 },
+    { name: "Entertainment", amount: 200 },
+  ];
+
+  const totalFixedExpenses = fixedExpenses || 0;
+  const totalOtherExpenses = otherExpenses.reduce(
+    (acc: number, expense: { amount: { toString: () => string; }; }) => acc + parseFloat(expense.amount.toString()),
+    0
+  );
+  const totalExpenses = totalFixedExpenses + totalOtherExpenses;
+  const remainingBudget = salary - totalExpenses;
+
+  // Ensure the remaining budget is non-negative
+  const validRemainingBudget = remainingBudget > 0 ? remainingBudget : 0;
+
+  // Data for the chart
+  const data = {
+    labels: ["Fixed Expenses", "Other Expenses", "Remaining Budget"],
+    datasets: [
+      {
+        label: "Budget Distribution",
+        data: [totalFixedExpenses, totalOtherExpenses, validRemainingBudget],
+        backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+        hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+      },
+    ],
+  };
 
   return (
     <>
@@ -65,49 +100,10 @@ const MainPage = () => {
           </div>
         </div>
 
-        {/* ChatGPT Section */}
         <div className="bg-white p-6 rounded shadow">
-          <h2 className="text-xl font-bold mb-4">ChatGPT Assistant</h2>
-          <p>Ask ChatGPT for financial advice or insights.</p>
-          {/* Placeholder for future ChatGPT integration */}
-        </div>
-      </div>
-
-      {/* Right Sidebar */}
-      <div className="fixed top-0 right-0 h-screen w-96 bg-gray-100 p-6 overflow-y-auto">
-        {/* Calendar */}
-        <div className="mb-6">
-          <h2 className="text-xl font-bold mb-4">Calendar</h2>
-          <Calendar onChange={() => onCalendarChange} value={calendarValue} />
-        </div>
-
-        <div>
-          <h2 className="text-xl font-bold mb-4">Recent Transactions</h2>
-          <ul className="space-y-4">
-            <li className="flex justify-between p-4 bg-white rounded shadow">
-              <div>
-                <div className="font-bold">Groceries</div>
-                <div className="text-gray-500 text-sm">July 28, 2024</div>
-              </div>
-              <div className="text-red-500 font-bold">-₹50.00</div>
-            </li>
-            <li className="flex justify-between p-4 bg-white rounded shadow">
-              <div>
-                <div className="font-bold">Salary</div>
-                <div className="text-gray-500 text-sm">July 25, 2024</div>
-              </div>
-              <div className="text-green-500 font-bold">+₹2,500.00</div>
-            </li>
-            <li className="flex justify-between p-4 bg-white rounded shadow">
-              <div>
-                <div className="font-bold">Electric Bill</div>
-                <div className="text-gray-500 text-sm">July 20, 2024</div>
-              </div>
-              <div className="text-red-500 font-bold">-₹120.00</div>
-            </li>
-            {/* Add more dummy transactions here */}
-          </ul>
-        </div>
+      <h2 className="text-xl font-bold mb-4">Budget Distribution</h2>
+      <Pie data={data} />
+    </div>
       </div>
     </>
   );
