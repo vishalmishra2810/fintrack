@@ -108,7 +108,7 @@ const Budget: React.FC = () => {
                   className="flex justify-between p-2 border border-gray-300 rounded-md"
                 >
                   <span className="font-semibold">{expense.name}</span>
-                  <span>${expense.amount.toFixed(2)}</span>
+                  <span>₹{expense.amount.toFixed(2)}</span>
                 </li>
               ))}
             </ul>
@@ -125,10 +125,11 @@ const Budget: React.FC = () => {
           <p className="text-lg">
             Remaining Budget:{" "}
             <span className="font-bold text-indigo-600">
-              ${remainingBudget.toFixed(2)}
+            ₹{remainingBudget.toFixed(2)}
             </span>
           </p>
         </div>
+        <p>As Per The Study, Atleast 20% of Salary amount needs to be invested.</p>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-type ExtraScoreType = "Hearts" | "Diamond" | "Clubs" | "Spades" | "None";
+type ExtraScoreType = "Hukum" | "Eit" | "Paan" | "Chidi" | "None";
 
 const Turup = () => {
     const [player1Score, setPlayer1Score] = useState(0);
@@ -10,14 +10,12 @@ const Turup = () => {
     const [extraScores, setExtraScores] = useState<{
         [key in ExtraScoreType]: number;
     }>({
-        Hearts: 0,
-        Diamond: 0,
-        Clubs: 0,
-        Spades: 0,
+        Hukum: 0,
+        Eit: 0,
+        Paan: 0,
+        Chidi: 0,
         None: 0,
     });
-
-
 
     const handlePlayerScore = (player: any) => {
         if (player === 1) {
@@ -40,10 +38,10 @@ const Turup = () => {
         setPlayer1Score(0);
         setPlayer2Score(0);
         setExtraScores({
-            Hearts: 0,
-            Diamond: 0,
-            Clubs: 0,
-            Spades: 0,
+            Hukum: 0,
+            Eit: 0,
+            Paan: 0,
+            Chidi: 0,
             None: 0,
         });
     };
@@ -58,7 +56,7 @@ const Turup = () => {
                         className="bg-blue-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-blue-600"
                         onClick={() => handlePlayerScore(1)}
                     >
-                        Player 1 Score
+                        Vishal and Jeetu
                     </button>
                     <span className="text-lg font-semibold mt-2">{player1Score}</span>
                 </div>
@@ -67,7 +65,7 @@ const Turup = () => {
                         className="bg-red-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-red-600"
                         onClick={() => handlePlayerScore(2)}
                     >
-                        Player 2 Score
+                        Shubham and Veerpal
                     </button>
                     <span className="text-lg font-semibold mt-2">{player2Score}</span>
                 </div>

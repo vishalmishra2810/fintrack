@@ -20,11 +20,11 @@ const MainPage = () => {
 
   // Sample data for the graph
   const spendingData = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
     datasets: [
       {
         label: 'Monthly Spending',
-        data: [300, 400, 350, 500, 450, 600, 550],
+        data: [300, 400, 350, 500, 450, 600, 550, 400, 600, 500, 600, 400],
         fill: false,
         backgroundColor: 'rgba(75,192,192,1)',
         borderColor: 'rgba(75,192,192,1)',
